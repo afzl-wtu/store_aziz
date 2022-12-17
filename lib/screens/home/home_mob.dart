@@ -23,9 +23,11 @@ class HomeMob extends StatefulWidget {
 class _HomeMobState extends State<HomeMob> {
   final _drawerController = PhloxDrawerController();
   Category hrm = Category.all;
+  List<Product> catProducts = [];
   void categoryChanger({required Category a}) {
     hrm = a;
     _drawerController.toggle();
+    catProducts = products.where((e) => e.category == a).toList();
     setState(() {});
   }
 
@@ -120,9 +122,14 @@ class _HomeMobState extends State<HomeMob> {
                     height: 250,
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: 10,
+                        itemCount: hrm == Category.all
+                            ? products.length ~/ 3
+                            : catProducts.length,
                         itemBuilder: (c, i) {
-                          return ProductCard(pro: products[i]);
+                          return ProductCard(
+                              pro: hrm == Category.all
+                                  ? products[i]
+                                  : catProducts[i]);
                         }),
                   ),
                   Padding(
@@ -143,9 +150,10 @@ class _HomeMobState extends State<HomeMob> {
                     height: 250,
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: 10,
+                        itemCount: products.length ~/ 3,
                         itemBuilder: (c, i) {
-                          return ProductCard(pro: products[i]);
+                          return ProductCard(
+                              pro: products[products.length ~/ 3 + i]);
                         }),
                   ),
                   Padding(
@@ -166,9 +174,11 @@ class _HomeMobState extends State<HomeMob> {
                     height: 250,
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: 10,
+                        itemCount:
+                            products.length - (2 * (products.length ~/ 3)),
                         itemBuilder: (c, i) {
-                          return ProductCard(pro: products[i]);
+                          return ProductCard(
+                              pro: products[(2 * (products.length ~/ 3)) + i]);
                         }),
                   ),
                   const SizedBox(

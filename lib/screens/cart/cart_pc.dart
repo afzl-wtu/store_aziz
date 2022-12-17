@@ -54,6 +54,7 @@ class CartPC extends StatelessWidget {
                   const BoxConstraints(maxHeight: 1500, minHeight: 400),
               child: Obx(() {
                 return ListView.builder(
+                  physics: NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   padding: const EdgeInsets.all(16.0),
                   itemCount: cartController.cart.length,

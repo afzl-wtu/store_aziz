@@ -36,6 +36,7 @@ class CartMob extends StatelessWidget {
               constraints:
                   const BoxConstraints(maxHeight: 1000, minHeight: 500),
               child: Obx(() => ListView.builder(
+                    physics: const NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
                     padding: const EdgeInsets.all(16.0),
                     itemCount: cartController.cart.length,

@@ -994,4 +994,25 @@ FIRST STEP IN MOLD PREVENTION – By checking suspicious water stains with a moi
 ACCURACY- Stick the stainless steel pins into the surface of what you are measuring in order to get a read-out. Overall measurement range of 5 to 50% for wood and 1. 5 to 33% for building materials as well as low, medium and high moisture tones and colored green, yellow and red LED visual alerts
 EASY TO READ AND USE- Large 0. 3 in. (8mm) high digits in a backlit LCD display for quick and easy viewing plus a hold function to freeze a reading, auto power off and a low battery indicator
 INCLUDES- Extra 0. 3 in. (8mm) stainless steel pins, protective cap that doubles as a calibration checker and a “9V” battery'''),
+  Product(
+      title:
+          'General Tools MMD4E Digital Moisture Meter, Water Leak Detector, Moisture Tester, Pin Type, Backlit LCD Display With Audible and Visual High-Medium-Low Moisture Content Alerts, Grays',
+      id: '39',
+      category: Category.tools,
+      images: [
+        'https://www.astthim.co.uk/wp-content/uploads/2021/05/41zK8gL-n1L._AC_.jpg',
+        'https://www.astthim.co.uk/wp-content/uploads/2021/05/41pqcdph9tL._AC_.jpg',
+        'https://www.astthim.co.uk/wp-content/uploads/2021/05/41pMD3upGL._AC_.jpg',
+        'https://www.astthim.co.uk/wp-content/uploads/2021/05/510bbL11lEL._AC_.jpg',
+        'https://www.astthim.co.uk/wp-content/uploads/2021/05/413EOkuKtiL._AC_.jpg',
+        'https://www.astthim.co.uk/wp-content/uploads/2021/05/51q9go5IL._AC_.jpg',
+      ],
+      price: 23,
+      description:
+          '''The General Tools MMD4E Pin-Style Digital Moisture Meter provides accurate moisture level reading to detect leaks, dampness and moisture in wood, walls, ceiling, carpet and firewood. It is an essential tool for assessing water damage and remediation efforts after flooding from storms, hurricanes, roof leaks or broken pipes to discover hidden water damage in floors, walls and under carpets. By checking suspicious water stains with a moisture tester around the house, you can determine whether the area is wet (a perfect breeding ground for mold) or has long since dried. This water leak detector also is helpful for new home inspections and home restorations, locating roof leaks or simply to ensure firewood is ready to burn. It also ensures the appropriate level of surface dryness before painting, sealing or treating wood or drywall. The moisture meter is easy to use: simply stick the stainless steel pins into the surface of what you are measuring in order to get a read-out. Overall measurement range of 5 to 50% for wood and 1.5 to 33% for building materials. The backlit, large, easy-to-read digits and clearly-designed LED alerts tell you immediately if the moisture content is high, medium or low. Plus, the moisture meter has audible high, medium, low alerts so you will be able to hear the level even if you are in a dark or awkward space where you can’t see the screen. The sturdy, ergonomic shape and rubber side grips allow for comfort even when using for multiple measurements. Every moisture meter also feature a hold function to freeze a reading to read later, auto power off and a low battery indicator. Every package includes extra 0.3 in. (8mm) stainless steel pins, a protective cap that doubles as a calibration checker and a “9V” battery.
+DETECT MOISTURE- Determine the moisture content of wood and other building materials (like drywall) or check water damaged areas to see if moisture is still present
+FIRST STEP IN MOLD PREVENTION – By checking suspicious water stains with a moisture tester around the house, you can determine whether the area is wet (a perfect breeding ground for mold) or has long since dried
+ACCURACY- Stick the stainless steel pins into the surface of what you are measuring in order to get a read-out. Overall measurement range of 5 to 50% for wood and 1. 5 to 33% for building materials as well as low, medium and high moisture tones and colored green, yellow and red LED visual alerts
+EASY TO READ AND USE- Large 0. 3 in. (8mm) high digits in a backlit LCD display for quick and easy viewing plus a hold function to freeze a reading, auto power off and a low battery indicator
+INCLUDES- Extra 0. 3 in. (8mm) stainless steel pins, protective cap that doubles as a calibration checker and a “9V” battery'''),
 ];
