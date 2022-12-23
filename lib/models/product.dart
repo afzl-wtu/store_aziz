@@ -1015,4 +1015,258 @@ FIRST STEP IN MOLD PREVENTION – By checking suspicious water stains with a moi
 ACCURACY- Stick the stainless steel pins into the surface of what you are measuring in order to get a read-out. Overall measurement range of 5 to 50% for wood and 1. 5 to 33% for building materials as well as low, medium and high moisture tones and colored green, yellow and red LED visual alerts
 EASY TO READ AND USE- Large 0. 3 in. (8mm) high digits in a backlit LCD display for quick and easy viewing plus a hold function to freeze a reading, auto power off and a low battery indicator
 INCLUDES- Extra 0. 3 in. (8mm) stainless steel pins, protective cap that doubles as a calibration checker and a “9V” battery'''),
+  Product(
+      title: 'Apple AirPods Pro with MagSafe Charging Case',
+      id: '40',
+      category: Category.electronics,
+      images: [
+        'https://mcprod.jumbo.ae/media/catalog/product/1/_/1.1.543015c863.999xx_ctngsmenkhxqxmyh_dwc0fowgci90crfo.jpg',
+        'https://mcprod.jumbo.ae/media/catalog/product/1/_/1.1.543015c863.999xx_ctngsmenkhxqxmyh_dwc0fowgci90crfo.jpg',
+        'https://mcprod.jumbo.ae/media/catalog/product/1/_/1.1.543015c863.999xx_ctngsmenkhxqxmyh_dwc0fowgci90crfo.jpg',
+      ],
+      price: 999,
+      description: '''Apple AirPods Pro with MagSafe Charging Case
+
+ 
+
+With the Apple AirPods Earphones with MagSafe Charging Case, you can enjoy continuous, crystal-clear music on the go. These airpods are designed to produce high-quality sound to let you immerse yourself in your enjoyment.
+
+ 
+
+Easy to use
+
+ 
+
+Apple's Airpods are simple to operate. It's simple to use them; simply place them in your ears and they'll connect quickly. When you put these in your ears, they start playing music and cease when you take them out.
+
+ 
+
+Convenient 
+
+ 
+
+You may utilise gesture control with the Airpods to play or pause music. You won't have to struggle with tangled connections with these Airpods because they are genuinely wireless. The Apple W1 chip, which was built by a customer, lies at the heart of Airpods' technology. It provides a very stable wireless connection and significantly improves sound quality.
+
+ 
+
+Noise cancellation
+
+ 
+
+Active Noise Cancellation and Transparency mode are available on the AirPods Pro. Active Noise Cancellation, Transparency mode, and Off are the three noise-control modes available on AirPods Pro Depending on how much of your environment you wish to hear, you may switch between them.
+
+ 
+
+Wireless charging
+
+ 
+
+AirPods have a battery life of more than 24 hours when used with the MagSafe Charging Case. Wireless chargers, including MagSafe, are compatible with the charging case, making wireless charging a breeze with quick attachment for increased convenience.'''),
+  Product(
+      title: 'Sony 4GB B Series MP3 Walkman',
+      id: '41',
+      category: Category.electronics,
+      images: [
+        'https://mcprod.jumbo.ae/media/catalog/product/s/o/soim.27.1.74a6e6f44b.999xx_yhajdnagxcu2avqj.jpg',
+        'https://mcprod.jumbo.ae/media/catalog/product/s/o/soim.27.2.1ce91a59ca.999xx_qn3nemgwqrwgtqqv.jpg',
+        'https://mcprod.jumbo.ae/media/catalog/product/s/o/soim.27.3.5d2ffec47a.999xx_7rfyqiv8vv6mnx1e.jpg',
+      ],
+      price: 250,
+      description:
+          '''Perfect for travel, the Sony NWZ-B183 MP3 player is small, lightweight and functional.
+
+ 
+
+Its distinctive design features direct USB connectivity so you can take advantage of quick charge with drag and drop. Drag and drop lets you choose the music you want to put on the device without the hassle of installing an additional programme. The USB MP3 player also features a Bass Boost function that delivers thumping bass for an immersive listening experience.
+
+ 
+
+With a large 4GB capacity and up to 20 hours of battery life, this portable MP3 player comes supplied with headphones.
+
+ 
+
+-Distinctive design with aluminium finish & Bass Boost function.
+
+-4GB capacity & up to 20hr battery life.
+
+-Comes with headphones.'''),
+  Product(
+      title:
+          'Sony A80K 65 Inch TV XR65A80K BRAVIA XR OLED 4K UHD Smart Google TV- 2022 Model',
+      id: '42',
+      category: Category.electronics,
+      images: [
+        'https://mcprod.jumbo.ae/media/catalog/product/a/8/a80kexample.13a0f93047.999xx_nadeyalyu7z56hsj.jpg',
+        'https://mcprod.jumbo.ae/media/catalog/product/4/4/444.1.77d640abcf.999xx_kmk0tiplabubqnvi.jpghttps://mcprod.jumbo.ae/media/catalog/product/4/4/444.2.fca4646f25.999xx_a8inwqhjfpumi6bb.jpg',
+        'https://mcprod.jumbo.ae/media/catalog/product/4/4/444.3.67dddfe4d6.999xx_pfzzous7lwswffg3.jpg',
+        'https://mcprod.jumbo.ae/media/catalog/product/4/4/444.4.23e858e693.999xx_n3ezrl9q9qgb7lj5.jpg',
+      ],
+      price: 7999,
+      description: '''Pure OLED black and brilliant color
+Step up to an immersive viewing experience with vision and sound in perfect harmony on this Sony OLED TV, powered by Cognitive Processor XR™. Enjoy exceptional pure black contrast for pictures full of depth and detail.
+
+Next generation picture and sound with Cognitive Intelligence
+Take vision and sound to the next level with Cognitive Processor XR™. Our revolutionary processor on Sony BRAVIA XR™ TVs reproduces content the way humans see and hear for an incredibly lifelike experience. It understands how the human eye focuses, cross analyzing images to give real life depth, extraordinary contrast and beautifully vivid colors.
+
+Exceptional pure blacks for real-life depth and texture
+Pairing our OLED panel with XR OLED Contrast Pro, this TV boosts color and contrast in bright areas so you can enjoy unprecedented pure blacks and peak brightness. Combined with Cognitive Processor XR™, it enhances pictures in the same way as your eyes focus so you won't miss a single detail in dazzling light or deep shadow.
+
+Screen is the speaker, pictures and sound in harmony
+Acoustic Surface Audio＋™ uses special actuators to turn the screen into a multi-channel speaker. You'll hear sound that precisely matches what’s on screen with pictures and sound in total harmony for a truly immersive experience.
+
+Hands-free help from Google
+With hands-free voice control built into Google TV, you can set aside your remote and simply use your voice to control your TV. Ask Google to find a specific title, search by genre, and get personalized recommendations on what to watch by saying, "Hey Google, what should I watch?". Even get answers on screen, control smart home devices, and more.1
+
+Renew, recycle and reduce, designed for the environment
+Our BRAVIA XR TVs are designed for immersive experiences with the environment in mind. We are committed to using less virgin plastic in large parts of our TVs and packaging. The A80K uses recycled plastics in its rear cover. Our unique backlight control technologies, BRAVIA CAM and sensors not only deliver high picture quality but also reduce power consumption.
+
+Pure blacks for real-life depth and texture
+XR OLED Contrast Pro boosts color and contrast in bright areas for exceptionally realistic pictures defined by absolute pure blacks and peak brightness. With a temperature sensor and high luminance panel, this OLED TV utilizes our Cognitive Processor XR™ to detect screen temperature and precisely control light so pixels in bright areas are illuminated simultaneously.
+
+A wide color spectrum for real-world shades and hues
+Powered by our Cognitive Processor XR™, XR Triluminos Pro enables A80K to access over a billion colors and reproduce each one with the subtle differences seen in the real world. Together with our wide color gamut panel and human-centric processor, it can detect color from saturation, hue and brightness to deliver natural shades in every detail.
+
+Recreating lost texture, all your content upscaled to 4K
+With XR 4K Upscaling, you'll enjoy entertainment close to 4K quality, whatever the content or source. Our Cognitive Processor XR™ accesses a vast amount of data, intelligently recreating lost textures and detail for real world pictures.
+
+Intelligent motion processing for smooth, fast-moving action
+Powered by our Cognitive Processor XR™, XR OLED Motion combats blur by detecting and cross analyzing key visual elements on successive frames. It creates and inserts extra frames between the original ones so you can enjoy smooth and clear action, even in fast-moving sequences.
+
+Beautiful colors from any angle
+Watching TV from the sides is now as satisfying as from the center. Our self-illuminating OLED panel keeps colors consistent and true, wherever you're watching.
+
+Screen is the speaker, sound follows pictures precisely
+Sound comes directly from the screen with Acoustic Surface Audio＋™. Triple actuators behind the TV vibrate to create acoustics that move with the picture. Two actuators on the sides also improve high frequency sound with clear and natural dialogue. Left and right subwoofers boost bass for immersive sound at home.
+
+All your entertainment upscaled to 3D surround sound
+With BRAVIA XR™, everything you watch gets the true surround sound treatment. XR Surround virtually creates surround sound from the sides and vertically using just the TV speakers, so you can experience 3D audio without the need for in-ceiling or up-firing speakers. Our BRAVIA XR™ TVs are also compatible with Dolby Atmos®.
+
+Voice Zoom™ 2 enhances voices for clearer dialogue
+Hear TV dialogue more clearly without turning up the volume. Even if speech is difficult to hear, Voice Zoom 2 detects the type of voice, analyzes it and enhances its clarity.
+
+Perfect with Sony audio
+Paired with Sony audio equipment, our latest BRAVIA XR TVs go even further, bringing you an unmatched audio-visual experience with outstanding XR picture and sound quality.
+
+XR OLED CONTRAST PRO – Exceptional pure blacks for real-life depth and texture. TV boosts color and contrast in bright areas so you can enjoy unprecedented pure blacks and peak brightness.
+
+COGNITIVE PROCESSOR XR – Revolutionary TV processing technology that understands how humans see and hear to deliver intense contrast with pure blacks, high peak brightness, and natural colors.
+
+XR TRILUMINOS PRO – A wide color spectrum for real-world shades and hues. Enables to access over a billion colors and reproduce each one with the subtle differences seen in the real world.
+
+ACOUSTIC SURFACE AUDIO+ – Screen is the speaker. Sound comes directly from the screen with Acoustic Surface Audio＋™. Triple actuators behind the TV vibrate to create acoustics that move with the picture. Two actuators on the sides also improve high frequency sound with clear and natural dialogue. Left and right subwoofers boost bass for immersive sound at home.
+
+XR 4K Upscaling - Recreating lost texture, all your content upscaled to 4K. ou'll enjoy entertainment close to 4K quality, whatever the content or source.
+
+3D Surround Upscaling - XR Surround virtually creates surround sound from the sides and vertically using just the TV speakers, so you can experience 3D audio without the need for in-ceiling or up-firing speakers. Our BRAVIA XR™ TVs are also compatible with Dolby Atmos®.
+
+Google TV - Watch what you love, control it with your voice. See 700,000+ movies and TV episodes, all in one place. Google TV brings your favorite content from across your apps and subscriptions and organizes them just for you.
+
+Perfect for PlayStation®5 - Pair your BRAVIA XR TV with a PlayStation®5 console to get a Sony-exclusive fantastic gaming experience. With immersive picture and sound, you'll feel like you're right in the middle of the action.'''),
+  Product(
+      title: 'Weber Master-Touch GBS E-5750 Charcoal Grill 57 cm, Black ',
+      id: '43',
+      category: Category.electronics,
+      images: [
+        'https://mcprod.jumbo.ae/media/catalog/product/1/7/17.1.jpg.8966356bd5.999xx_exmpcngxuepv2bnb_tlzgx9fi4rpxfl8s.png',
+        'https://mcprod.jumbo.ae/media/catalog/product/1/7/17.1.jpg.8966356bd5.999xx_exmpcngxuepv2bnb_tlzgx9fi4rpxfl8s.png',
+      ],
+      price: 1700,
+      description: '''
+FEATURES
+GOURMET BBQ SYSTEM HINGED COOKING GRATE
+HEAVY-GAUGE STEEL CHARCOAL GRATE
+PORCELAIN-ENAMELED BOWL AND LID
+BUILT-IN LID THERMOMETER
+BOTTOM WIRE RACK
+LID HANDLE WITH HEAT SHIELD
+TUCK-AWAY LID HOLDER
+REMOVABLE, HIGH-CAPACITY, ALUMINUM ASH CATCHER
+STAINLESS STEEL ONE-TOUCH CLEANING SYSTEM
+SPRING CLIP/PUSH PIN LEG ASSEMBLY
+BRIQUETTE MEASURING CUP INCLUDED
+EASY-GRIP DAMPER HANDLE
+IGRILL BRACKET
+SMOKE SETTING'''),
+  Product(
+      title: 'BOSCH 90cm Electric Cooker HKK99V850M ',
+      id: '44',
+      category: Category.electronics,
+      images: [
+        'https://mcprod.jumbo.ae/media/catalog/product/m/c/mcsa01869111hkk99v850mrangecookerboschstpdef.7b736d40bd.999xx_z9tvt0rsvcrfwuff.jpg',
+        'https://mcprod.jumbo.ae/media/catalog/product/m/c/mcsa01869100hkk99v850mrangecookerboschpga2def.a0f38cb09e.999xx_be1sal8zljbsaatv.jpg',
+        'https://mcprod.jumbo.ae/media/catalog/product/m/c/mcsa01869103hkk99v850mrangecookerboschpga1def.78dd98f681.999xx_h2nlkhrv0fuegcyl.jpg',
+        'https://mcprod.jumbo.ae/media/catalog/product/m/c/mcsa01869107hkk99v850mrangecookerboschpga4def.b86e394437.999xx_sz7ckmg4sulfaqdu.jpg',
+        'https://mcprod.jumbo.ae/media/catalog/product/m/c/mcsa01869108hkk99v850mrangecookerboschpga3def.c3a3b1f857.999xx_6vm8j8rbxqffewxh.jpg'
+      ],
+      price: 4799,
+      description: '''Warranty - 1 Year
+
+BOSCH 90cm Electric Cooker HKK99V850
+
+
+Give your kitchen a modern and luxurious look with a glass-ceramic top with the latest range cooker and electric oven.
+
+
+•    Easy to Clean and maintain: Grease and dirt can be removed very easily and quickly. Regular cleaning is not required.
+
+
+•    9 cooking functions: You can cook different dishes at the same time. Functions like defrost settings, hot air grilling, Rotisserie, pizza settings, etc.
+
+
+•    5 Cooking Zones: Heat temperature is critical while cooking food. BOSCH 90cm Electric Cooker HKK99V850 gives you a 5-stage residual heat regulator to fix the heat.
+
+
+•    Oven with a large capacity:  The electric cooker’s over is very large; you can bake several cakes together in it.
+
+
+
+
+Warranty - 1 Year
+
+The modern range cooker with electric oven and glass ceramic cooktop.
+
+Full Glass Door supports quick and easy cleaning by removable inner glass of the door.
+
+Full Catalytic cleans itself on side and rear surfaces thanks to catalytic panels while cooking with ease and pleasure.
+
+Glass ceramic hob
+5 highSpeed cooking zones including 1 dual circuit zone and 1 extendable oval zone
+Front left: Dual-circuit cooking zone 2 KW, 0.7 KW
+Rear left: Standard zone 1.2 KW
+Center: Oval zone 1.4 KW, 2.2 KW
+Rear right: Standard zone 1.8 KW
+Front right: Standard zone 1.2 KW
+5 stage residual heat indicator
+Splash guard'''),
+  Product(
+      title:
+          'Miele Front Load Washer WWG 660 WCS TwinDos WiFi 9kg with Miele Heat-pump Dryer TWF 640 WP EcoSpeed 8kg ',
+      id: '45',
+      category: Category.electronics,
+      images: [
+        'https://mcprod.jumbo.ae/media/catalog/product/w/w/wwg660twf6401.0aa3cc22f4.999xx_wydtfrjfgwr7wksd.jpg',
+        'https://mcprod.jumbo.ae/media/catalog/product/w/w/wwg660twf6401.0aa3cc22f4.999xx_wydtfrjfgwr7wksd.jpg',
+      ],
+      price: 14500,
+      description:
+          '''Miele Front Load Washer WWG 660 WCS TwinDos WiFi 9kg with Miele Heat-pump Dryer TWF 640 WP EcoSpeed 8kg
+
+Do you have a WWG 660 WCS washer and are looking for a dryer? Then Miele introduces the dryer TWF 640 WP EcoSpeed with modern features.
+
+Gives perfectly dried clothes: PerfectDry technology continuously evaluates and adjusts the drying procedure to the clothes wetness degree. To reduce material entanglement, smart drum reversal is constantly on.
+
+It saves time and the environment: Thanks to Eco speed innovation, you could successfully dry your clothing 40 times quicker with optimal power economy.
+
+Eco-Dry technology: It includes a filtering system and an upkeep-free heat transfer mechanism for efficient and productive functioning. 
+
+Miele Front Load Washer WWG 660 WCS TwinDos WiFi 9kg with Miele Heat-pump Dryer TWF 640 WP EcoSpeed 8kg
+
+Do you have a WWG 660 WCS washer and are looking for a dryer? Then Miele introduces the dryer TWF 640 WP EcoSpeed with modern features.
+
+Gives perfectly dried clothes: PerfectDry technology continuously evaluates and adjusts the drying procedure to the clothes wetness degree. To reduce material entanglement, smart drum reversal is constantly on.
+
+It saves time and the environment: Thanks to Eco speed innovation, you could successfully dry your clothing 40 times quicker with optimal power economy.
+
+Eco-Dry technology: It includes a filtering system and an upkeep-free heat transfer mechanism for efficient and productive functioning. 
+Miele Front Load Washer WWG 660 WCS TwinDos WiFi 9kg with Miele Heat-pump Dryer TWF 640 WP EcoSpeed 8kg Do you have a WWG 660 WCS washer and are looking for a dryer? Then Miele introduces the dryer TWF 640 WP EcoSpeed with modern features. Gives perfectly dried clothes PerfectDry technology continuously evaluates and adjusts the drying procedure to the clothes wetness degree. To reduce material entanglement, smart drum reversal is constantly on. It saves time and the environment Thanks to Eco speed innovation, you could successfully dry your clothing 40 times quicker with optimal power economy. Eco-Dry technology It includes a filtering system and an upkeep-free heat transfer mechanism for efficient and productive functioning. By using this product, you are indirectly supporting a better environment. Miele Front Load Washer WWG 660 WCS TwinDos WiFi 9kg with Miele Heat-pump Dryer TWF 640 WP EcoSpeed 8kg'''),
 ];
