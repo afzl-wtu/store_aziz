@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:image_network/image_network.dart';
+// import 'package:image_network/image_network.dart';
 
 import '../../../core/cart_controller.dart';
 import '../../../models/cart_item.dart';
@@ -32,10 +32,11 @@ class _CartTileState extends State<CartTile> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: <Widget>[
-                  ImageNetwork(
-                      image: widget.cartItem.product.images[0],
-                      height: 80,
-                      width: 80),
+                  Image.network(
+                    widget.cartItem.product.images[0],
+                    // height: 80,
+                    // width: 80
+                  ),
                   const SizedBox(
                     width: 30.0,
                   ),

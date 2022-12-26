@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:image_network/image_network.dart';
+// import 'package:image_network/image_network.dart';
 import 'package:newproject/models/cart_item.dart';
 import 'package:newproject/screens/cart/widgets/cart_tile.dart';
 import 'package:newproject/screens/checkout/checkout_mob.dart';
@@ -130,10 +130,11 @@ class _CartTileMobState extends State<CartTileMob> {
               color: Colors.grey.shade300,
               child: Row(
                 children: <Widget>[
-                  ImageNetwork(
-                      image: widget.item.product.images[0],
-                      height: 70,
-                      width: 70),
+                  Image.network(
+                    widget.item.product.images[0],
+                    // height: 70,
+                    // width: 70
+                  ),
                   const SizedBox(
                     width: 20.0,
                   ),

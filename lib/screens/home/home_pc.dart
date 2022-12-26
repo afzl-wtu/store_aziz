@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:image_network/image_network.dart';
+// import 'package:image_network/image_network.dart';
 import 'package:newproject/roughdata/hover.dart';
 import 'package:newproject/widgets/footer.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
@@ -401,11 +401,12 @@ class _CustomInfoState extends State<HoverCard> {
                       //   image: NetworkImage(widget.prod.images[0]),
                       //   fit: BoxFit.fill,
                       // ),
-                      child: ImageNetwork(
-                        image: widget.prod.images[0],
-                        height: 400,
-                        width: 400,
-                        fitWeb: BoxFitWeb.fill,
+                      child: Image.network(
+                        // image:
+                        widget.prod.images[0],
+                        // height: 400,
+                        // width: 400,
+                        // fitWeb: BoxFitWeb.fill,
                       ),
                     ),
                   ),

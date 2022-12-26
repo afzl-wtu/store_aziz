@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:google_fonts/google_fonts.dart';
-import 'package:image_network/image_network.dart';
+// import 'package:image_network/image_network.dart';
 import 'package:newproject/models/category.dart';
 import 'package:newproject/screens/product/product_detail_mob.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
@@ -330,7 +330,9 @@ class ProductCard extends StatelessWidget {
                 height: 250,
                 child: Column(
                   children: [
-                    ImageNetwork(image: pro.images[0], height: 120, width: 120),
+                    Image.network(
+                      pro.images[0], //height: 120, width: 120
+                    ),
                     // Image.asset(
                     //   'asset/images/Cooking-set.png',
                     //   height: 120,
