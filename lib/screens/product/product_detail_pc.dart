@@ -114,7 +114,7 @@ class _SideMenuState extends State<SideMenu> {
             style: const TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
           ),
           Text(
-            "£ ${widget.prod.price * 5}",
+            "£ ${widget.prod.price * 2}",
             style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 30.0),
@@ -147,7 +147,7 @@ class _SideMenuState extends State<SideMenu> {
               Text("Total:", style: TextStyle(color: Colors.grey.shade700)),
               const Spacer(),
               Text(
-                "${widget.prod.price * 5} x ${quantity.toInt()} = \$ ${widget.prod.price * 5 * quantity.toInt()}",
+                "${widget.prod.price * 2} x ${quantity.toInt()} = \$ ${widget.prod.price * 2 * quantity.toInt()}",
                 style: const TextStyle(fontSize: 16.0),
               ),
             ],

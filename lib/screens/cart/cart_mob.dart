@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-// import 'package:image_network/image_network.dart';
+
 import 'package:newproject/models/cart_item.dart';
-import 'package:newproject/screens/cart/widgets/cart_tile.dart';
 import 'package:newproject/screens/checkout/checkout_mob.dart';
 
 import '../../core/cart_controller.dart';
@@ -53,7 +52,7 @@ class CartMob extends StatelessWidget {
                 children: <Widget>[
                   Obx(
                     () => Text(
-                      "SubTotal       ${cartController.total * 5}",
+                      "SubTotal       ${cartController.total * 2}",
                       style: TextStyle(
                           color: Colors.grey.shade700, fontSize: 16.0),
                     ),
@@ -70,7 +69,7 @@ class CartMob extends StatelessWidget {
                     height: 10.0,
                   ),
                   Text(
-                    "Cart Subtotal     ${cartController.total + 5 * 5}",
+                    "Cart Subtotal     ${cartController.total + 5 * 2}",
                     style: const TextStyle(
                         fontWeight: FontWeight.bold, fontSize: 18.0),
                   ),
@@ -132,8 +131,6 @@ class _CartTileMobState extends State<CartTileMob> {
                 children: <Widget>[
                   Image.network(
                     widget.item.product.images[0],
-                    // height: 70,
-                    // width: 70
                   ),
                   const SizedBox(
                     width: 20.0,
@@ -156,7 +153,7 @@ class _CartTileMobState extends State<CartTileMob> {
                         Row(
                           children: [
                             Text(
-                              '£ ${widget.item.product.price * 5}',
+                              '£ ${widget.item.product.price * 2}',
                               style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 15.0,

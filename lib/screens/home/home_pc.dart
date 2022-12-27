@@ -1,7 +1,8 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-// import 'package:image_network/image_network.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:newproject/roughdata/hover.dart';
 import 'package:newproject/widgets/footer.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
@@ -11,7 +12,6 @@ import '../../models/cart_item.dart';
 import '../../models/category.dart';
 import '../../models/product.dart';
 import '../../widgets/baged_cart_button.dart';
-import '../cart/cart_page.dart';
 import '../product/product_detail.dart';
 
 class HomePC extends StatefulWidget {
@@ -71,7 +71,7 @@ class _HomePCState extends State<HomePC> {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 400, vertical: 8),
             color: Colors.blueGrey,
-            height: 60,
+            height: 70,
             width: double.infinity,
             child: OutlineSearchBar(
               backgroundColor: Colors.grey.shade300,
@@ -88,49 +88,88 @@ class _HomePCState extends State<HomePC> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    margin: const EdgeInsets.only(left: 70),
-                    decoration: BoxDecoration(
-                        border: Border.all(color: Colors.blueGrey, width: 3)),
-                    height: 450,
-                    width: 250,
-                    child: Column(
-                      children: [
-                        ...categories.map((e) => drawerButton(e)).toList()
-                      ],
+                  const SizedBox(
+                    width: 40,
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      // margin: const EdgeInsets.only(left: 70),
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.blueGrey, width: 3)),
+                      height: 450,
+                      width: 200,
+                      child: Column(
+                        children: [
+                          ...categories.map((e) => drawerButton(e)).toList()
+                        ],
+                      ),
                     ),
                   ),
-                  const Expanded(child: MyBanner()),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 30),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Expanded(
+                    flex: 3,
+                    child: Column(
                       children: [
-                        Icon(
-                          Icons.headphones_outlined,
-                          color: Colors.blue.shade800,
-                          size: 50,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(8, 9, 20, 0),
-                          child: Column(
-                            children: const [
-                              Text(
-                                'Support:',
-                                style: TextStyle(fontSize: 17),
+                        SizedBox(
+                          height: 420,
+                          width: double.infinity,
+                          child: CarouselSlider(
+                            items: [
+                              Image.network(
+                                'https://discounts.aaa.com/sites/default/files/styles/featured_image/public/2022-03/aaa-shopping-discounts.jpg?itok=5QYtK9Ga',
+                                fit: BoxFit.cover,
                               ),
-                              Text('website@gmail.com',
-                                  style: TextStyle(fontSize: 15))
+                              Image.network(
+                                'https://pimcore.cdnsbg.com/tmp/image-thumbnails/10000/15612/thumb__carousel-img/smartbuyglasses-deals-top-banner-5-.png',
+                                fit: BoxFit.fill,
+                              ),
+                              Image.network(
+                                'https://www.netrockdeals.com/wp-content/uploads/2021/10/Buy-1-Get-1-Free-Offers-1.jpg',
+                                fit: BoxFit.fill,
+                              ),
+                              Image.network(
+                                'https://cdn.shopify.com/s/files/1/0070/7032/files/discount-hero.jpg?v=1493781512',
+                                fit: BoxFit.fill,
+                              ),
+                              Image.network(
+                                'https://prod-dubaistore-bucket.oss-me-east-1.aliyuncs.com/ds-assets/sites/site-100/filename16702184.17362.jpeg?x-oss-process=image/format,webp/quality,q_80',
+                                fit: BoxFit.fill,
+                              ),
                             ],
+                            options: CarouselOptions(
+                                viewportFraction: 1,
+                                autoPlay: true,
+                                enlargeCenterPage: false),
                           ),
                         ),
+                        Container(
+                          width: double.infinity,
+                          height: 70,
+                          color: Colors.red,
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(
+                                vertical: 20, horizontal: 30),
+                            child: Text(
+                              "START BUY WITH LOVE!",
+                              style: GoogleFonts.nanumMyeongjo(
+                                textStyle: TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                        )
                       ],
                     ),
                   )
                 ],
               ),
             ),
-
           Padding(
             padding: const EdgeInsets.fromLTRB(30, 20, 0, 20),
             child: Text(
@@ -138,30 +177,6 @@ class _HomePCState extends State<HomePC> {
               style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
           ),
-          // GridView.extent(
-          //   physics: const NeverScrollableScrollPhysics(),
-          //   shrinkWrap: true,
-          //   maxCrossAxisExtent: 310,
-          //   children: products
-          //       .where((e) => hrm == Category.all ? true : e.category == hrm)
-          //       .toList()
-          //       .map(
-          //         (e) => GestureDetector(
-          //           onTap: () => Get.to(ProductDetail(prodd: e))!.then((value) {
-          //             if (value != null) {
-          //               setState(() {
-          //                 hrm = value;
-          //               });
-          //             }
-          //           }),
-          //           child: ProductCard(
-          //             prod: e,
-          //           ),
-          //         ),
-          //       )
-          //       .toList(),
-          // ),
-
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30),
             child: Row(
@@ -174,8 +189,7 @@ class _HomePCState extends State<HomePC> {
                     mainAxisSpacing: 20,
                     physics: const NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
-                    maxCrossAxisExtent:
-                        230, ///////////////////////////////////////////////////////////
+                    maxCrossAxisExtent: 230,
                     children: products
                         .where((e) =>
                             hrm == Category.all ? true : e.category == hrm)
@@ -351,7 +365,7 @@ class _CustomInfoState extends State<HoverCard> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Text(
-                            '£ ${widget.prod.price * 5}',
+                            '£ ${widget.prod.price * 2}',
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w500,
@@ -378,7 +392,6 @@ class _CustomInfoState extends State<HoverCard> {
                                   CartItem(product: widget.prod, quantity: 1),
                                 );
                               },
-                              // onPressed: () => Get.to(const CartPage()),
                               icon: const Icon(
                                 FontAwesomeIcons.cartShopping,
                                 color: Colors.blueGrey,
@@ -397,16 +410,8 @@ class _CustomInfoState extends State<HoverCard> {
                     duration: const Duration(milliseconds: 250),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(7),
-                      // child: Image(
-                      //   image: NetworkImage(widget.prod.images[0]),
-                      //   fit: BoxFit.fill,
-                      // ),
                       child: Image.network(
-                        // image:
                         widget.prod.images[0],
-                        // height: 400,
-                        // width: 400,
-                        // fitWeb: BoxFitWeb.fill,
                       ),
                     ),
                   ),

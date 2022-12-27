@@ -78,6 +78,32 @@ class Footer extends StatelessWidget {
           ),
           const VerticalDivider(
             color: Colors.white,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 200, vertical: 100),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Icon(
+                  Icons.headphones_outlined,
+                  color: Colors.white,
+                  size: 60,
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(8, 9, 20, 0),
+                  child: Column(
+                    children: const [
+                      Text(
+                        'Support:',
+                        style: TextStyle(fontSize: 22, color: Colors.white),
+                      ),
+                      Text('website@gmail.com',
+                          style: TextStyle(fontSize: 20, color: Colors.white))
+                    ],
+                  ),
+                ),
+              ],
+            ),
           )
         ],
       ),

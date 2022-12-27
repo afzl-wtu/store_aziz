@@ -34,8 +34,6 @@ class _CartTileState extends State<CartTile> {
                 children: <Widget>[
                   Image.network(
                     widget.cartItem.product.images[0],
-                    // height: 80,
-                    // width: 80
                   ),
                   const SizedBox(
                     width: 30.0,
@@ -57,7 +55,7 @@ class _CartTileState extends State<CartTile> {
                         Row(
                           children: [
                             Text(
-                              '£ ${widget.cartItem.product.price * 5}',
+                              '£ ${widget.cartItem.product.price * 2}',
                               style: const TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 18.0),
                             ),

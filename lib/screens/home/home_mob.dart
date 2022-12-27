@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -84,7 +85,30 @@ class _HomeMobState extends State<HomeMob> {
                     SizedBox(
                       height: 320,
                       width: double.infinity,
-                      child: Image.asset('asset/images/cats.png'),
+                      child: CarouselSlider(
+                        items: [
+                          Image.network(
+                            'https://dubaiofw.com/wp-content/uploads/2020/11/1-to-10-Dirham-Shops-in-Dubai-and-Best-Discount-Storesc.jpg',
+                            fit: BoxFit.cover,
+                          ),
+                          Image.network(
+                            'https://cdn.shopify.com/s/files/1/0070/7032/files/discount-hero.jpg?v=1493781512',
+                            fit: BoxFit.cover,
+                          ),
+                          Image.network(
+                            'https://images.moneycontrol.com/static-mcnews/2021/10/Online-shopping.jpg',
+                            fit: BoxFit.cover,
+                          ),
+                          Image.network(
+                            'https://prod-dubaistore-bucket.oss-me-east-1.aliyuncs.com/ds-assets/sites/site-100/filename16702184.17362.jpeg?x-oss-process=image/format,webp/quality,q_80',
+                            fit: BoxFit.fill,
+                          ),
+                        ],
+                        options: CarouselOptions(
+                            viewportFraction: 1,
+                            autoPlay: true,
+                            enlargeCenterPage: false),
+                      ),
                     ),
                   Container(
                     padding: const EdgeInsets.all(9),
@@ -189,7 +213,6 @@ class _HomeMobState extends State<HomeMob> {
                     width: double.infinity,
                     color: Colors.blueGrey,
                     child: Column(
-                      //   mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Row(
                           children: [
@@ -327,18 +350,15 @@ class ProductCard extends StatelessWidget {
                 decoration: BoxDecoration(
                     border: Border.all(color: Colors.blueGrey),
                     borderRadius: BorderRadius.circular(7)),
-                height: 250,
                 child: Column(
                   children: [
-                    Image.network(
-                      pro.images[0], //height: 120, width: 120
+                    const SizedBox(
+                      height: 5,
                     ),
-                    // Image.asset(
-                    //   'asset/images/Cooking-set.png',
-                    //   height: 120,
-                    //   width: 120,
-                    // ),
-
+                    Image.network(
+                      pro.images[0],
+                      height: 160,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 20, vertical: 10),
@@ -348,13 +368,12 @@ class ProductCard extends StatelessWidget {
                           textStyle: const TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
-                            //color: Colors.grey.shade700,
                           ),
                         ),
                       ),
                     ),
                     Text(
-                      '£ ${pro.price * 5}',
+                      '£ ${pro.price * 2}',
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
