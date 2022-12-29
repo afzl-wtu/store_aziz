@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:newproject/roughdata/hover.dart';
 import 'package:newproject/widgets/footer.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
 
@@ -127,7 +126,7 @@ class _HomePCState extends State<HomePC> {
                                 fit: BoxFit.fill,
                               ),
                               Image.network(
-                                'https://www.netrockdeals.com/wp-content/uploads/2021/10/Buy-1-Get-1-Free-Offers-1.jpg',
+                                'https://www.netrockdeals.com/wp-content/uploads/2021/10/Buy-1-Get-1-Free-Offers-1.jpgf',
                                 fit: BoxFit.fill,
                               ),
                               Image.network(
@@ -148,14 +147,14 @@ class _HomePCState extends State<HomePC> {
                         Container(
                           width: double.infinity,
                           height: 70,
-                          color: Colors.red,
+                          color: Colors.blueGrey,
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
                                 vertical: 20, horizontal: 30),
                             child: Text(
                               "START BUY WITH LOVE!",
                               style: GoogleFonts.nanumMyeongjo(
-                                textStyle: TextStyle(
+                                textStyle: const TextStyle(
                                   fontSize: 25,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
