@@ -22,7 +22,7 @@ class _ProductDetailMobState extends State<ProductDetailMob> {
   Widget build(BuildContext context) {
     final cartController = Get.find<CartController>();
     return Scaffold(
-      backgroundColor: Colors.blueGrey.shade100,
+      backgroundColor: Colors.blue.shade100,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -72,7 +72,7 @@ class _ProductDetailMobState extends State<ProductDetailMob> {
                   ),
                   const SizedBox(height: 20.0),
                   Slider(
-                    activeColor: Colors.blueGrey,
+                    activeColor: Colors.blue,
                     onChanged: (value) {
                       quantity = value;
                       setState(() {});
@@ -81,7 +81,7 @@ class _ProductDetailMobState extends State<ProductDetailMob> {
                     max: 10,
                     value: quantity,
                     divisions: 10,
-                    inactiveColor: Colors.grey.shade300,
+                    inactiveColor: Colors.white,
                   ),
                   Row(
                     children: <Widget>[
@@ -102,7 +102,7 @@ class _ProductDetailMobState extends State<ProductDetailMob> {
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0)),
-                          backgroundColor: Colors.blueGrey,
+                          backgroundColor: Colors.blue,
                           textStyle: const TextStyle(
                             color: Colors.white,
                           )),

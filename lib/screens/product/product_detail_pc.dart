@@ -17,7 +17,7 @@ class ProductDetailPC extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade300,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
           'Wecome To WorldWide WebSite Ltd.',
@@ -29,7 +29,7 @@ class ProductDetailPC extends StatelessWidget {
         actions: const [
           BadgedCartIconButton(),
         ],
-        backgroundColor: Colors.grey.shade300,
+        backgroundColor: Colors.white,
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -38,14 +38,14 @@ class ProductDetailPC extends StatelessWidget {
           children: [
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 400, vertical: 8),
-              color: Colors.blueGrey,
+              color: Colors.blue,
               height: 60,
               width: double.infinity,
               child: OutlineSearchBar(
-                backgroundColor: Colors.grey.shade300,
-                cursorColor: Colors.blueGrey,
-                borderColor: Colors.blueGrey,
-                searchButtonIconColor: Colors.blueGrey,
+                backgroundColor: Colors.white,
+                cursorColor: Colors.blue,
+                borderColor: Colors.blue,
+                searchButtonIconColor: Colors.blue,
                 borderRadius: BorderRadius.circular(25),
               ),
             ),
@@ -56,8 +56,8 @@ class ProductDetailPC extends StatelessWidget {
                     child: Padding(
                   padding: const EdgeInsets.all(100),
                   child: Card(
-                      color: Colors.grey.shade300,
-                      shadowColor: Colors.blueGrey,
+                      color: Colors.white,
+                      shadowColor: Colors.blue,
                       elevation: 15,
                       child: ImageSlider(prod: prod)),
                 )),
@@ -82,7 +82,7 @@ class ProductDetailPC extends StatelessWidget {
         child: Text(
           cat.name.toUpperCase(),
           style: const TextStyle(
-            color: Colors.blueGrey,
+            color: Colors.blue,
           ),
         ),
         onPressed: () {
@@ -131,7 +131,7 @@ class _SideMenuState extends State<SideMenu> {
           ),
           const SizedBox(height: 20.0),
           Slider(
-            activeColor: Colors.blueGrey,
+            activeColor: Colors.blue,
             onChanged: (value) {
               quantity = value;
               setState(() {});
@@ -140,7 +140,7 @@ class _SideMenuState extends State<SideMenu> {
             max: 10,
             value: quantity,
             divisions: 10,
-            inactiveColor: Colors.grey.shade300,
+            inactiveColor: Colors.white,
           ),
           Row(
             children: <Widget>[
@@ -165,7 +165,7 @@ class _SideMenuState extends State<SideMenu> {
                   style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5.0)),
-                      backgroundColor: Colors.blueGrey,
+                      backgroundColor: Colors.blue,
                       textStyle: const TextStyle(
                         color: Colors.white,
                       )),

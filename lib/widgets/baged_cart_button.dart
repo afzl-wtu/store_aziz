@@ -18,7 +18,7 @@ class BadgedCartIconButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 8.0),
       child: Obx(() => Badge(
-            badgeColor: Colors.blueGrey,
+            badgeColor: Colors.blue,
             position: BadgePosition.topEnd(top: -1, end: -6),
             animationType: BadgeAnimationType.slide,
             badgeContent: Text(
@@ -29,7 +29,7 @@ class BadgedCartIconButton extends StatelessWidget {
               onPressed: () => Get.to(const CartPage()),
               icon: const Icon(
                 FontAwesomeIcons.cartShopping,
-                color: Colors.blueGrey,
+                color: Colors.blue,
               ),
             ),
           )),

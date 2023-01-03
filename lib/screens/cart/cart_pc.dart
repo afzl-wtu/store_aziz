@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:newproject/screens/cart/widgets/cart_tile.dart';
 import 'package:newproject/screens/checkout/checkout_pc.dart';
+import 'package:newproject/widgets/header.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
 
 import '../../core/cart_controller.dart';
@@ -15,8 +16,15 @@ class CartPC extends StatelessWidget {
     final cartController = Get.find<CartController>();
 
     return Scaffold(
-      backgroundColor: Colors.grey.shade300,
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        leading: IconButton(
+          color: Colors.grey.shade700,
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
         title: Text(
           "CART",
           style: TextStyle(
@@ -27,7 +35,7 @@ class CartPC extends StatelessWidget {
         actions: const [
           BadgedCartIconButton(),
         ],
-        backgroundColor: Colors.grey.shade300,
+        backgroundColor: Colors.white,
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -36,19 +44,7 @@ class CartPC extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 400, vertical: 8),
-              color: Colors.blueGrey,
-              height: 60,
-              width: double.infinity,
-              child: OutlineSearchBar(
-                backgroundColor: Colors.grey.shade300,
-                cursorColor: Colors.blueGrey,
-                borderColor: Colors.blueGrey,
-                searchButtonIconColor: Colors.blueGrey,
-                borderRadius: BorderRadius.circular(25),
-              ),
-            ),
+            const Header(),
             ConstrainedBox(
               constraints:
                   const BoxConstraints(maxHeight: 1500, minHeight: 400),
@@ -89,7 +85,7 @@ class CartPC extends StatelessWidget {
                     height: 10.0,
                   ),
                   Text(
-                    "Cart Subtotal     ${cartController.total + 5 * 2}",
+                    "Cart Subtotal     ${cartController.total == 0 ? 0 : (cartController.total + 5 * 2)}",
                     style: const TextStyle(
                         fontWeight: FontWeight.bold, fontSize: 18.0),
                   ),
@@ -100,16 +96,19 @@ class CartPC extends StatelessWidget {
                     width: 300,
                     child: MaterialButton(
                       height: 50.0,
-                      color: Colors.blueGrey,
+                      disabledColor: Colors.grey.shade700,
+                      color: Colors.blue,
+                      onPressed: cartController.total == 0
+                          ? null
+                          : () {
+                              Get.to(
+                                const CheckoutPc(),
+                              );
+                            },
                       child: Text(
                         "Secure Checkout".toUpperCase(),
                         style: const TextStyle(color: Colors.white),
                       ),
-                      onPressed: () {
-                        Get.to(
-                          const CheckoutPc(),
-                        );
-                      },
                     ),
                   )
                 ],

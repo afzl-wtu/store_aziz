@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 // import 'package:image_network/image_network.dart';
 import 'package:newproject/models/category.dart';
 import 'package:newproject/screens/product/product_detail_mob.dart';
+import 'package:newproject/widgets/footer.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
 import 'package:phlox_drawer/controller/phlox_drawer_controller.dart';
 import 'package:phlox_drawer/controller/phlox_drawer_option.dart';
@@ -61,20 +62,20 @@ class _HomeMobState extends State<HomeMob> {
               onPressed: () => _drawerController.toggle(),
               icon: const Icon(
                 Icons.menu,
-                color: Colors.blueGrey,
+                color: Colors.blue,
               )),
         ),
         body: Column(
           children: [
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-              color: Colors.blueGrey,
+              color: Colors.blue,
               height: 50,
               width: double.infinity,
               child: OutlineSearchBar(
-                cursorColor: Colors.blueGrey,
-                borderColor: Colors.blueGrey,
-                searchButtonIconColor: Colors.blueGrey,
+                cursorColor: Colors.blue,
+                borderColor: Colors.blue,
+                searchButtonIconColor: Colors.blue,
                 borderRadius: BorderRadius.circular(25),
               ),
             ),
@@ -208,114 +209,8 @@ class _HomeMobState extends State<HomeMob> {
                   const SizedBox(
                     height: 50,
                   ),
-                  Container(
-                    height: 220,
-                    width: double.infinity,
-                    color: Colors.blueGrey,
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.symmetric(
-                                  vertical: 30, horizontal: 10),
-                              child: Column(
-                                children: const [
-                                  Text(
-                                    'PRIVACY POLICY',
-                                    style: TextStyle(
-                                        color: Colors.white, fontSize: 15),
-                                  ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text(
-                                    'SHIPPING POLICY',
-                                    style: TextStyle(
-                                        color: Colors.white, fontSize: 15),
-                                  ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text(
-                                    'SHIPPING INFO',
-                                    style: TextStyle(
-                                        color: Colors.white, fontSize: 15),
-                                  ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text(
-                                    'CONTACT US',
-                                    style: TextStyle(
-                                        color: Colors.white, fontSize: 15),
-                                  )
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(
-                                vertical: 30,
-                              ),
-                              child: Column(
-                                children: const [
-                                  Text(
-                                    'REFUND POLICY',
-                                    style: TextStyle(
-                                        color: Colors.white, fontSize: 15),
-                                  ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text(
-                                    'TERM OF SERVICE',
-                                    style: TextStyle(
-                                        color: Colors.white, fontSize: 15),
-                                  ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text(
-                                    'PAYMENT FAQS',
-                                    style: TextStyle(
-                                        color: Colors.white, fontSize: 15),
-                                  ),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const SizedBox(
-                              width: 50,
-                            ),
-                            const Icon(
-                              Icons.headphones_outlined,
-                              color: Colors.white,
-                              size: 40,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(8, 9, 20, 0),
-                              child: Column(
-                                children: const [
-                                  Text(
-                                    'Support:',
-                                    style: TextStyle(fontSize: 17),
-                                  ),
-                                  Text('website@gmail.com',
-                                      style: TextStyle(fontSize: 15))
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
+                  const Footer(
+                    isMob: true,
                   )
                 ],
               ),
@@ -348,7 +243,7 @@ class ProductCard extends StatelessWidget {
               child: Container(
                 margin: const EdgeInsets.symmetric(horizontal: 5),
                 decoration: BoxDecoration(
-                    border: Border.all(color: Colors.blueGrey),
+                    border: Border.all(color: Colors.blue),
                     borderRadius: BorderRadius.circular(7)),
                 child: Column(
                   children: [
@@ -397,14 +292,14 @@ class DrawerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Colors.blue,
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             FloatingActionButton.small(
-              backgroundColor: Colors.blueGrey,
+              backgroundColor: Colors.blue,
               elevation: 0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),

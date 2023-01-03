@@ -28,7 +28,7 @@ class _CartTileState extends State<CartTile> {
           child: Material(
             borderRadius: BorderRadius.circular(5.0),
             child: Container(
-              color: Colors.grey.shade300,
+              color: Colors.white,
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: <Widget>[
@@ -74,7 +74,7 @@ class _CartTileState extends State<CartTile> {
                                 width: 25,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(15),
-                                  border: Border.all(color: Colors.blueGrey),
+                                  border: Border.all(color: Colors.blue),
                                 ),
                                 child: const Icon(
                                   Icons.remove,
@@ -102,7 +102,7 @@ class _CartTileState extends State<CartTile> {
                                 width: 25,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(15),
-                                  border: Border.all(color: Colors.blueGrey),
+                                  border: Border.all(color: Colors.blue),
                                 ),
                                 child: const Icon(
                                   Icons.add,
@@ -131,7 +131,7 @@ class _CartTileState extends State<CartTile> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5.0)),
               padding: const EdgeInsets.all(0.0),
-              color: Colors.blueGrey,
+              color: Colors.blue,
               child: const Icon(
                 Icons.clear,
                 color: Colors.white,

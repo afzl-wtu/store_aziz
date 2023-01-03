@@ -8,7 +8,7 @@ class CheckoutMob extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade300,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
           "SECURE CHECKOUT",
@@ -20,7 +20,7 @@ class CheckoutMob extends StatelessWidget {
         actions: const [
           BadgedCartIconButton(),
         ],
-        backgroundColor: Colors.grey.shade300,
+        backgroundColor: Colors.white,
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -225,7 +225,7 @@ class CheckoutMob extends StatelessWidget {
                     child: ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.blueGrey,
+                        backgroundColor: Colors.blue,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30),
                         ),
@@ -235,7 +235,7 @@ class CheckoutMob extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.grey.shade300),
+                            color: Colors.white),
                       ),
                     ),
                   ),

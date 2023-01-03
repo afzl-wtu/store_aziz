@@ -4,13 +4,13 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:newproject/widgets/footer.dart';
-import 'package:outline_search_bar/outline_search_bar.dart';
 
 import '../../core/cart_controller.dart';
 import '../../models/cart_item.dart';
 import '../../models/category.dart';
 import '../../models/product.dart';
 import '../../widgets/baged_cart_button.dart';
+import '../../widgets/header.dart';
 import '../product/product_detail.dart';
 
 class HomePC extends StatefulWidget {
@@ -49,11 +49,11 @@ class _HomePCState extends State<HomePC> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade300,
+      // backgroundColor: Colors.white,
       key: _key,
       appBar: AppBar(
         title: Text(
-          'Wecome To WorldWide WebSite Ltd.',
+          'VAT Number: GB368916153',
           style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 15,
@@ -62,27 +62,18 @@ class _HomePCState extends State<HomePC> {
         actions: const [
           BadgedCartIconButton(),
         ],
-        backgroundColor: Colors.grey.shade300,
+        backgroundColor: Colors.white,
         elevation: 0,
       ),
       body: ListView(
         children: [
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 400, vertical: 8),
-            color: Colors.blueGrey,
-            height: 70,
-            width: double.infinity,
-            child: OutlineSearchBar(
-              backgroundColor: Colors.grey.shade300,
-              cursorColor: Colors.blueGrey,
-              borderColor: Colors.blueGrey,
-              searchButtonIconColor: Colors.blueGrey,
-              borderRadius: BorderRadius.circular(25),
-            ),
+          const Header(),
+          const SizedBox(
+            height: 10,
           ),
           if (hrm == Category.all)
             Container(
-              color: Colors.grey.shade300,
+              color: Colors.white,
               height: 500,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -95,10 +86,12 @@ class _HomePCState extends State<HomePC> {
                     child: Container(
                       // margin: const EdgeInsets.only(left: 70),
                       decoration: BoxDecoration(
-                          border: Border.all(color: Colors.blueGrey, width: 3)),
-                      height: 450,
-                      width: 200,
+                          // color: Colors.red,
+                          border: Border.all(color: Colors.blue, width: 3)),
+                      // height: 450,
+                      // width: 200,
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           ...categories.map((e) => drawerButton(e)).toList()
                         ],
@@ -144,10 +137,13 @@ class _HomePCState extends State<HomePC> {
                                 enlargeCenterPage: false),
                           ),
                         ),
+                        const SizedBox(
+                          height: 10,
+                        ),
                         Container(
                           width: double.infinity,
                           height: 70,
-                          color: Colors.blueGrey,
+                          color: const Color(0xFF0d436d),
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
                                 vertical: 20, horizontal: 30),
@@ -347,7 +343,7 @@ class _CustomInfoState extends State<HoverCard> {
                   child: AnimatedContainer(
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(7),
-                        color: Colors.grey.shade300),
+                        color: Colors.white),
                     height: height,
                     width: width,
                     duration: const Duration(milliseconds: 300),
@@ -393,7 +389,7 @@ class _CustomInfoState extends State<HoverCard> {
                               },
                               icon: const Icon(
                                 FontAwesomeIcons.cartShopping,
-                                color: Colors.blueGrey,
+                                color: Colors.blue,
                               ),
                             ),
                           ),

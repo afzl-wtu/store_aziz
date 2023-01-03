@@ -10,7 +10,7 @@ class CheckoutPc extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade300,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
           "SECURE CHECKOUT",
@@ -22,7 +22,7 @@ class CheckoutPc extends StatelessWidget {
         actions: const [
           BadgedCartIconButton(),
         ],
-        backgroundColor: Colors.grey.shade300,
+        backgroundColor: Colors.white,
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -30,14 +30,14 @@ class CheckoutPc extends StatelessWidget {
           children: [
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 400, vertical: 8),
-              color: Colors.blueGrey,
+              color: Colors.blue,
               height: 60,
               width: double.infinity,
               child: OutlineSearchBar(
-                backgroundColor: Colors.grey.shade300,
-                cursorColor: Colors.blueGrey,
-                borderColor: Colors.blueGrey,
-                searchButtonIconColor: Colors.blueGrey,
+                backgroundColor: Colors.white,
+                cursorColor: Colors.blue,
+                borderColor: Colors.blue,
+                searchButtonIconColor: Colors.blue,
                 borderRadius: BorderRadius.circular(25),
               ),
             ),
@@ -360,7 +360,7 @@ class CheckoutPc extends StatelessWidget {
                                 child: ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
-                                    backgroundColor: Colors.blueGrey,
+                                    backgroundColor: Colors.blue,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(30),
                                     ),
@@ -370,7 +370,7 @@ class CheckoutPc extends StatelessWidget {
                                     style: TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.grey.shade300),
+                                        color: Colors.white),
                                   ),
                                 ),
                               ),

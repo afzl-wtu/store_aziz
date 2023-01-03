@@ -16,6 +16,13 @@ class CartMob extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
       appBar: AppBar(
+        leading: IconButton(
+          color: Colors.grey.shade700,
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
         title: Text(
           "CART",
           style: TextStyle(
@@ -23,7 +30,7 @@ class CartMob extends StatelessWidget {
               fontWeight: FontWeight.bold,
               color: Colors.grey.shade700),
         ),
-        backgroundColor: Colors.grey.shade300,
+        backgroundColor: Colors.white,
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -69,7 +76,7 @@ class CartMob extends StatelessWidget {
                     height: 10.0,
                   ),
                   Text(
-                    "Cart Subtotal     ${cartController.total + 5 * 2}",
+                    "Cart Subtotal     ${cartController.total == 0 ? 0 : (cartController.total + 5 * 2)}",
                     style: const TextStyle(
                         fontWeight: FontWeight.bold, fontSize: 18.0),
                   ),
@@ -79,17 +86,20 @@ class CartMob extends StatelessWidget {
                   SizedBox(
                     width: 150,
                     child: MaterialButton(
+                      disabledColor: Colors.grey.shade700,
                       height: 50.0,
-                      color: Colors.blueGrey,
+                      color: Colors.blue,
+                      onPressed: cartController.total == 0
+                          ? null
+                          : () {
+                              Get.to(
+                                const CheckoutMob(),
+                              );
+                            },
                       child: Text(
                         "Secure Checkout".toUpperCase(),
                         style: const TextStyle(color: Colors.white),
                       ),
-                      onPressed: () {
-                        Get.to(
-                          const CheckoutMob(),
-                        );
-                      },
                     ),
                   )
                 ],
@@ -126,7 +136,7 @@ class _CartTileMobState extends State<CartTileMob> {
             child: Container(
               width: double.infinity,
               height: 100,
-              color: Colors.grey.shade300,
+              color: Colors.white,
               child: Row(
                 children: <Widget>[
                   Image.network(
@@ -157,7 +167,7 @@ class _CartTileMobState extends State<CartTileMob> {
                               style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 15.0,
-                                  color: Colors.blueGrey),
+                                  color: Colors.blue),
                             ),
                             const SizedBox(width: 30),
                             GestureDetector(
@@ -172,7 +182,7 @@ class _CartTileMobState extends State<CartTileMob> {
                                 width: 20,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
-                                  border: Border.all(color: Colors.blueGrey),
+                                  border: Border.all(color: Colors.blue),
                                 ),
                                 child: const Icon(
                                   Icons.remove,
@@ -200,7 +210,7 @@ class _CartTileMobState extends State<CartTileMob> {
                                 width: 20,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
-                                  border: Border.all(color: Colors.blueGrey),
+                                  border: Border.all(color: Colors.blue),
                                 ),
                                 child: const Icon(
                                   Icons.add,
@@ -229,7 +239,7 @@ class _CartTileMobState extends State<CartTileMob> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5.0)),
               padding: const EdgeInsets.all(0.0),
-              color: Colors.blueGrey,
+              color: Colors.blue,
               child: const Icon(
                 Icons.clear,
                 color: Colors.white,

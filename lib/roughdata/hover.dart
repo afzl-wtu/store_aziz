@@ -61,7 +61,7 @@ class _CustomInfoState extends State<CustomInfo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade300,
+      backgroundColor: Colors.white,
       body: Center(
         child: MouseRegion(
           onEnter: (a) {
@@ -76,7 +76,7 @@ class _CustomInfoState extends State<CustomInfo> {
             textAppear = false;
           },
           child: Container(
-            color: Colors.grey.shade300,
+            color: Colors.white,
             width: 650,
             height: 450,
             child: Stack(
