@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:newproject/screens/cart/widgets/cart_tile.dart';
 import 'package:newproject/screens/checkout/checkout_pc.dart';
 import 'package:newproject/widgets/header.dart';
-import 'package:outline_search_bar/outline_search_bar.dart';
 
 import '../../core/cart_controller.dart';
 import '../../widgets/baged_cart_button.dart';
