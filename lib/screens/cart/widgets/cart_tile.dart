@@ -34,6 +34,8 @@ class _CartTileState extends State<CartTile> {
                 children: <Widget>[
                   Image.network(
                     widget.cartItem.product.images[0],
+                    height: 70,
+                    width: 70,
                   ),
                   const SizedBox(
                     width: 30.0,
