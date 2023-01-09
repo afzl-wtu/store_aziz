@@ -1,8 +1,8 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:newproject/screens/home/widgets/ccarousel_slider.dart';
 import 'package:newproject/widgets/footer.dart';
 
 import '../../core/cart_controller.dart';
@@ -22,21 +22,6 @@ class HomePC extends StatefulWidget {
 
 class _HomePCState extends State<HomePC> {
   Category hrm = Category.all;
-  List<Widget> sliderImages() {
-    Set<String> a = {};
-    for (var p in products) {
-      for (var s in p.images) {
-        a.add(s);
-      }
-    }
-    return a
-        .toList()
-        .map((e) => Image.asset(
-              e,
-              fit: BoxFit.cover,
-            ))
-        .toList();
-  }
 
   // Category hrmm = Category.all;
   void categoryChanger({required Category a}) {
@@ -105,37 +90,10 @@ class _HomePCState extends State<HomePC> {
                     flex: 3,
                     child: Column(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 420,
                           width: double.infinity,
-                          child: CarouselSlider(
-                            items: [
-                              Image.network(
-                                'https://discounts.aaa.com/sites/default/files/styles/featured_image/public/2022-03/aaa-shopping-discounts.jpg?itok=5QYtK9Ga',
-                                fit: BoxFit.cover,
-                              ),
-                              Image.network(
-                                'https://pimcore.cdnsbg.com/tmp/image-thumbnails/10000/15612/thumb__carousel-img/smartbuyglasses-deals-top-banner-5-.png',
-                                fit: BoxFit.fill,
-                              ),
-                              Image.network(
-                                'https://www.netrockdeals.com/wp-content/uploads/2021/10/Buy-1-Get-1-Free-Offers-1.jpgf',
-                                fit: BoxFit.fill,
-                              ),
-                              Image.network(
-                                'https://cdn.shopify.com/s/files/1/0070/7032/files/discount-hero.jpg?v=1493781512',
-                                fit: BoxFit.fill,
-                              ),
-                              Image.network(
-                                'https://prod-dubaistore-bucket.oss-me-east-1.aliyuncs.com/ds-assets/sites/site-100/filename16702184.17362.jpeg?x-oss-process=image/format,webp/quality,q_80',
-                                fit: BoxFit.fill,
-                              ),
-                            ],
-                            options: CarouselOptions(
-                                viewportFraction: 1,
-                                autoPlay: true,
-                                enlargeCenterPage: false),
-                          ),
+                          child: CCarouselSlider(),
                         ),
                         const SizedBox(
                           height: 10,
@@ -148,7 +106,7 @@ class _HomePCState extends State<HomePC> {
                             padding: const EdgeInsets.symmetric(
                                 vertical: 20, horizontal: 30),
                             child: Text(
-                              "START BUY WITH LOVE!",
+                              "Affordability, Style and Comfort!",
                               style: GoogleFonts.nanumMyeongjo(
                                 textStyle: const TextStyle(
                                   fontSize: 25,
@@ -360,7 +318,7 @@ class _CustomInfoState extends State<HoverCard> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Text(
-                            '£ ${widget.prod.price * 2}',
+                            '£ ${widget.prod.price}',
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w500,
@@ -371,7 +329,9 @@ class _CustomInfoState extends State<HoverCard> {
                             padding: const EdgeInsets.only(top: 10.0),
                             width: 270,
                             child: Text(
-                              widget.prod.description.substring(0, 20),
+                              widget.prod.description,
+                              softWrap: true,
+                              maxLines: 4,
                               style: TextStyle(
                                 fontSize: 15.0,
                                 fontWeight: FontWeight.w500,
@@ -424,18 +384,23 @@ class _CustomInfoState extends State<HoverCard> {
                           vertical: 10.0,
                           horizontal: 20,
                         ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              widget.prod.title.substring(0, 10),
-                              style: const TextStyle(
-                                fontSize: 17,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black87,
+                        child: SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                widget.prod.title,
+                                // softWrap: true,
+                                style: const TextStyle(
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black87,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),

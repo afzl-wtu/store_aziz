@@ -20,11 +20,14 @@ class Header extends StatelessWidget {
           const Expanded(
             child: ListTile(
               textColor: Colors.white,
+              leading: CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage('asset/images/logo.jpeg'),
+              ),
               title: Text(
-                'EMRSA Ltd',
+                'EMRSA',
                 style: TextStyle(fontSize: 30),
               ),
-              trailing: Text('(Affordability, Style and Comfort)'),
             ),
           ),
           const Spacer(),

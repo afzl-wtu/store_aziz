@@ -163,7 +163,7 @@ class _CartTileMobState extends State<CartTileMob> {
                         Row(
                           children: [
                             Text(
-                              '£ ${widget.item.product.price * 2}',
+                              '£ ${widget.item.product.price}',
                               style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 15.0,

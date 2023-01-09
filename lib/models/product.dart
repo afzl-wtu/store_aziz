@@ -1022,7 +1022,7 @@ INCLUDES- Extra 0. 3 in. (8mm) stainless steel pins, protective cap that doubles
         'https://mcprod.jumbo.ae/media/catalog/product/1/_/1.1.543015c863.999xx_ctngsmenkhxqxmyh_dwc0fowgci90crfo.jpg',
         'https://mcprod.jumbo.ae/media/catalog/product/1/_/1.1.543015c863.999xx_ctngsmenkhxqxmyh_dwc0fowgci90crfo.jpg',
       ],
-      price: 999,
+      price: 155,
       description: '''Apple AirPods Pro with MagSafe Charging Case
 
  
@@ -1069,7 +1069,7 @@ AirPods have a battery life of more than 24 hours when used with the MagSafe Cha
         'https://mcprod.jumbo.ae/media/catalog/product/s/o/soim.27.2.1ce91a59ca.999xx_qn3nemgwqrwgtqqv.jpg',
         'https://mcprod.jumbo.ae/media/catalog/product/s/o/soim.27.3.5d2ffec47a.999xx_7rfyqiv8vv6mnx1e.jpg',
       ],
-      price: 250,
+      price: 66,
       description:
           '''Perfect for travel, the Sony NWZ-B183 MP3 player is small, lightweight and functional.
 
@@ -1099,7 +1099,7 @@ With a large 4GB capacity and up to 20 hours of battery life, this portable MP3 
         'https://mcprod.jumbo.ae/media/catalog/product/4/4/444.3.67dddfe4d6.999xx_pfzzous7lwswffg3.jpg',
         'https://mcprod.jumbo.ae/media/catalog/product/4/4/444.4.23e858e693.999xx_n3ezrl9q9qgb7lj5.jpg',
       ],
-      price: 7999,
+      price: 1650,
       description: '''Pure OLED black and brilliant color
 Step up to an immersive viewing experience with vision and sound in perfect harmony on this Sony OLED TV, powered by Cognitive Processor XR™. Enjoy exceptional pure black contrast for pictures full of depth and detail.
 
@@ -1168,7 +1168,7 @@ Perfect for PlayStation®5 - Pair your BRAVIA XR TV with a PlayStation®5 consol
         'https://mcprod.jumbo.ae/media/catalog/product/1/7/17.1.jpg.8966356bd5.999xx_exmpcngxuepv2bnb_tlzgx9fi4rpxfl8s.png',
         'https://mcprod.jumbo.ae/media/catalog/product/1/7/17.1.jpg.8966356bd5.999xx_exmpcngxuepv2bnb_tlzgx9fi4rpxfl8s.png',
       ],
-      price: 1700,
+      price: 300,
       description: '''
 FEATURES
 GOURMET BBQ SYSTEM HINGED COOKING GRATE
@@ -1196,7 +1196,7 @@ SMOKE SETTING'''),
         'https://mcprod.jumbo.ae/media/catalog/product/m/c/mcsa01869107hkk99v850mrangecookerboschpga4def.b86e394437.999xx_sz7ckmg4sulfaqdu.jpg',
         'https://mcprod.jumbo.ae/media/catalog/product/m/c/mcsa01869108hkk99v850mrangecookerboschpga3def.c3a3b1f857.999xx_6vm8j8rbxqffewxh.jpg'
       ],
-      price: 4799,
+      price: 999,
       description: '''Warranty - 1 Year
 
 BOSCH 90cm Electric Cooker HKK99V850
@@ -1245,7 +1245,7 @@ Splash guard'''),
         'https://mcprod.jumbo.ae/media/catalog/product/w/w/wwg660twf6401.0aa3cc22f4.999xx_wydtfrjfgwr7wksd.jpg',
         'https://mcprod.jumbo.ae/media/catalog/product/w/w/wwg660twf6401.0aa3cc22f4.999xx_wydtfrjfgwr7wksd.jpg',
       ],
-      price: 14500,
+      price: 1249,
       description:
           '''Miele Front Load Washer WWG 660 WCS TwinDos WiFi 9kg with Miele Heat-pump Dryer TWF 640 WP EcoSpeed 8kg
 

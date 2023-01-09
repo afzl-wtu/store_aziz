@@ -50,7 +50,7 @@ class _ProductDetailMobState extends State<ProductDetailMob> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 30),
                     child: Text(
-                      "£ ${widget.prod.price * 2}",
+                      "£ ${widget.prod.price}",
                       style: TextStyle(
                           fontSize: 22.0,
                           color: Colors.blue.shade900,
@@ -89,7 +89,7 @@ class _ProductDetailMobState extends State<ProductDetailMob> {
                           style: TextStyle(color: Colors.grey.shade700)),
                       const Spacer(),
                       Text(
-                        "${widget.prod.price * 2} x ${quantity.toInt()} = £ ${widget.prod.price * 2 * quantity.toInt()}",
+                        "${widget.prod.price} x ${quantity.toInt()} = £ ${widget.prod.price * quantity.toInt()}",
                         style: const TextStyle(fontSize: 16.0),
                       ),
                     ],

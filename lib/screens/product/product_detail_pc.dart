@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:newproject/core/cart_controller.dart';
 import 'package:newproject/screens/product/widgets/slider.dart';
 import 'package:newproject/widgets/footer.dart';
-import 'package:outline_search_bar/outline_search_bar.dart';
+import 'package:newproject/widgets/header.dart';
 
 import '../../models/cart_item.dart';
 import '../../models/category.dart';
@@ -36,19 +36,7 @@ class ProductDetailPC extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 400, vertical: 8),
-              color: Colors.blue,
-              height: 60,
-              width: double.infinity,
-              child: OutlineSearchBar(
-                backgroundColor: Colors.white,
-                cursorColor: Colors.blue,
-                borderColor: Colors.blue,
-                searchButtonIconColor: Colors.blue,
-                borderRadius: BorderRadius.circular(25),
-              ),
-            ),
+            const Header(),
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -114,7 +102,7 @@ class _SideMenuState extends State<SideMenu> {
             style: const TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
           ),
           Text(
-            "£ ${widget.prod.price * 2}",
+            "£ ${widget.prod.price}",
             style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 30.0),
@@ -147,7 +135,7 @@ class _SideMenuState extends State<SideMenu> {
               Text("Total:", style: TextStyle(color: Colors.grey.shade700)),
               const Spacer(),
               Text(
-                "${widget.prod.price * 2} x ${quantity.toInt()} = \$ ${widget.prod.price * 2 * quantity.toInt()}",
+                "${widget.prod.price} x ${quantity.toInt()} = \$ ${widget.prod.price * quantity.toInt()}",
                 style: const TextStyle(fontSize: 16.0),
               ),
             ],

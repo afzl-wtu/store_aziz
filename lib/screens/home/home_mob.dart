@@ -1,10 +1,10 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 // import 'package:image_network/image_network.dart';
 import 'package:newproject/models/category.dart';
+import 'package:newproject/screens/home/widgets/ccarousel_slider.dart';
 import 'package:newproject/screens/product/product_detail_mob.dart';
 import 'package:newproject/widgets/footer.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
@@ -72,52 +72,44 @@ class _HomeMobState extends State<HomeMob> {
               color: Colors.blue,
               height: 50,
               width: double.infinity,
-              child: OutlineSearchBar(
-                cursorColor: Colors.blue,
-                borderColor: Colors.blue,
-                searchButtonIconColor: Colors.blue,
-                borderRadius: BorderRadius.circular(25),
+              child: Row(
+                children: [
+                  const CircleAvatar(
+                    backgroundImage: AssetImage('asset/images/logo.jpeg'),
+                  ),
+                  const SizedBox(width: 10),
+                  const Text(
+                    'EMRSA',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  const SizedBox(width: 30),
+                  Expanded(
+                    child: OutlineSearchBar(
+                      cursorColor: Colors.blue,
+                      borderColor: Colors.blue,
+                      searchButtonIconColor: Colors.blue,
+                      borderRadius: BorderRadius.circular(25),
+                    ),
+                  ),
+                ],
               ),
             ),
             Expanded(
               child: ListView(
                 children: [
                   if (hrm == Category.all)
-                    SizedBox(
-                      height: 320,
+                    const SizedBox(
+                      height: 200,
                       width: double.infinity,
-                      child: CarouselSlider(
-                        items: [
-                          Image.network(
-                            'https://dubaiofw.com/wp-content/uploads/2020/11/1-to-10-Dirham-Shops-in-Dubai-and-Best-Discount-Storesc.jpg',
-                            fit: BoxFit.cover,
-                          ),
-                          Image.network(
-                            'https://cdn.shopify.com/s/files/1/0070/7032/files/discount-hero.jpg?v=1493781512',
-                            fit: BoxFit.cover,
-                          ),
-                          Image.network(
-                            'https://images.moneycontrol.com/static-mcnews/2021/10/Online-shopping.jpg',
-                            fit: BoxFit.cover,
-                          ),
-                          Image.network(
-                            'https://prod-dubaistore-bucket.oss-me-east-1.aliyuncs.com/ds-assets/sites/site-100/filename16702184.17362.jpeg?x-oss-process=image/format,webp/quality,q_80',
-                            fit: BoxFit.fill,
-                          ),
-                        ],
-                        options: CarouselOptions(
-                            viewportFraction: 1,
-                            autoPlay: true,
-                            enlargeCenterPage: false),
-                      ),
+                      child: CCarouselSlider(),
                     ),
                   Container(
                     padding: const EdgeInsets.all(9),
-                    color: Colors.grey.shade200,
+                    color: Colors.white,
                     height: 40,
                     width: double.infinity,
                     child: Text(
-                      "START BUY WITH LOVE!",
+                      "Affordability, Style and Comfort",
                       style: GoogleFonts.nanumMyeongjo(
                         textStyle: TextStyle(
                           fontSize: 20,
@@ -128,7 +120,7 @@ class _HomeMobState extends State<HomeMob> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 80, 0, 20),
+                    padding: const EdgeInsets.fromLTRB(20, 15, 0, 20),
                     child: Text(
                       hrm == Category.all
                           ? 'Trending Now!'
@@ -148,7 +140,8 @@ class _HomeMobState extends State<HomeMob> {
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: hrm == Category.all
-                            ? products.length ~/ 3
+                            ? //15
+                            products.length ~/ 3
                             : catProducts.length,
                         itemBuilder: (c, i) {
                           return ProductCard(
@@ -160,7 +153,7 @@ class _HomeMobState extends State<HomeMob> {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(20, 30, 0, 20),
                     child: Text(
-                      'Hole Sale!',
+                      'Whole Sale!',
                       style: GoogleFonts.nanumMyeongjo(
                         textStyle: TextStyle(
                           fontSize: 25,
@@ -175,10 +168,15 @@ class _HomeMobState extends State<HomeMob> {
                     height: 250,
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: products.length ~/ 3,
+                        itemCount:
+                            // 15,
+                            (products.length - products.length ~/ 3) ~/ 2,
                         itemBuilder: (c, i) {
                           return ProductCard(
-                              pro: products[products.length ~/ 3 + i]);
+                              pro: products[//15 + i
+                                  ((products.length - products.length ~/ 3) ~/
+                                          2) +
+                                      i]);
                         }),
                   ),
                   Padding(
@@ -199,11 +197,12 @@ class _HomeMobState extends State<HomeMob> {
                     height: 250,
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount:
+                        itemCount: //15
                             products.length - (2 * (products.length ~/ 3)),
                         itemBuilder: (c, i) {
                           return ProductCard(
-                              pro: products[(2 * (products.length ~/ 3)) + i]);
+                              pro: products[//30 + i
+                                  2 * (products.length ~/ 3) + i]);
                         }),
                   ),
                   const SizedBox(
@@ -258,7 +257,9 @@ class ProductCard extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 20, vertical: 10),
                       child: Text(
-                        pro.title.substring(0, 30),
+                        pro.title,
+                        softWrap: true,
+                        maxLines: 2,
                         style: GoogleFonts.nanumMyeongjo(
                           textStyle: const TextStyle(
                             fontSize: 15,
@@ -268,7 +269,7 @@ class ProductCard extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      '£ ${pro.price * 2}',
+                      '£ ${pro.price}',
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
