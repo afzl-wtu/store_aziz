@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Layout(
       child: GetMaterialApp(
+        title: "EMRSA",
         debugShowCheckedModeBanner: false,
         home: const HomePage(),
         theme: ThemeData(
