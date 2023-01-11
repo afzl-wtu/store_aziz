@@ -154,7 +154,7 @@ class _CustomInfoState extends State<CustomInfo> {
                     duration: const Duration(milliseconds: 250),
                     height: 400,
                     child: const Image(
-                      image: AssetImage('asset/images/cats.png'),
+                      image: AssetImage('assets/images/cats.png'),
                       fit: BoxFit.fill,
                     ),
                   ),

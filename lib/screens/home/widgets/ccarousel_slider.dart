@@ -10,15 +10,15 @@ class CCarouselSlider extends StatelessWidget {
   Widget build(BuildContext context) {
     return CarouselSlider(
       items: [
-        Image.asset('asset/images/electronics.jpeg'),
-        Image.asset('asset/images/iphones.jpeg'),
-        Image.asset('asset/images/mobiles.jpeg'),
-        Image.network(
-          'https://pimcore.cdnsbg.com/tmp/image-thumbnails/10000/15612/thumb__carousel-img/smartbuyglasses-deals-top-banner-5-.png',
+        Image.asset('assets/images/electronics.jpeg'),
+        Image.asset('assets/images/iphones.jpeg'),
+        Image.asset('assets/images/mobiles.jpeg'),
+        Image.asset(
+          'assets/images/smartbuyglasses-deals-top-banner-5-.png',
           fit: BoxFit.fill,
         ),
-        Image.network(
-          'https://cdn.shopify.com/s/files/1/0070/7032/files/discount-hero.jpg?v=1493781512',
+        Image.asset(
+          'assets/images/discount-hero.jpg',
           fit: BoxFit.fill,
         ),
       ],

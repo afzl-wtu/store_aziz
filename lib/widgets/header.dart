@@ -22,7 +22,7 @@ class Header extends StatelessWidget {
               textColor: Colors.white,
               leading: CircleAvatar(
                 radius: 30,
-                backgroundImage: AssetImage('asset/images/logo.jpeg'),
+                backgroundImage: AssetImage('assets/images/logo.jpeg'),
               ),
               title: Text(
                 'EMRSA',

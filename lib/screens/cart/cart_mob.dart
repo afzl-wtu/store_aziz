@@ -139,7 +139,7 @@ class _CartTileMobState extends State<CartTileMob> {
               color: Colors.white,
               child: Row(
                 children: <Widget>[
-                  Image.network(
+                  Image.asset(
                     widget.item.product.images[0],
                   ),
                   const SizedBox(

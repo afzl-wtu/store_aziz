@@ -25,7 +25,7 @@ class ImageSlider extends StatelessWidget {
             viewportFraction: 1,
           ),
           items: prod.images
-              .map((e) => Image.network(
+              .map((e) => Image.asset(
                     // height: 500,
                     // width: 500,
                     // fullScreen: true,

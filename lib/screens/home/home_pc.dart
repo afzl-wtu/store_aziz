@@ -169,7 +169,7 @@ class _HomePCState extends State<HomePC> {
                   width: 40,
                 ),
                 Image.asset(
-                  'asset/images/sale01.jpg',
+                  'assets/images/sale01.jpg',
                   height: 500,
                   width: 280,
                   fit: BoxFit.fill,
@@ -180,7 +180,7 @@ class _HomePCState extends State<HomePC> {
           const SizedBox(
             height: 40,
           ),
-          Image.asset('asset/images/HEALTH-AND-HOUSEHOLD-1.jpg'),
+          Image.asset('assets/images/HEALTH-AND-HOUSEHOLD-1.jpg'),
           const SizedBox(
             height: 40,
           ),
@@ -365,7 +365,7 @@ class _CustomInfoState extends State<HoverCard> {
                     duration: const Duration(milliseconds: 250),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(7),
-                      child: Image.network(
+                      child: Image.asset(
                         widget.prod.images[0],
                       ),
                     ),

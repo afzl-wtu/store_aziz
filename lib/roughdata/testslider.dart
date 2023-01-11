@@ -25,7 +25,7 @@ class MySlider extends StatelessWidget {
                               topRight: Radius.circular(10.0)),
                           image: DecorationImage(
                               image:
-                                  AssetImage('asset/images/01-29-300x300.jpg'),
+                                  AssetImage('assets/images/01-29-300x300.jpg'),
                               fit: BoxFit.fill)),
                     ),
                     Container(

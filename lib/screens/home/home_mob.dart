@@ -75,7 +75,7 @@ class _HomeMobState extends State<HomeMob> {
               child: Row(
                 children: [
                   const CircleAvatar(
-                    backgroundImage: AssetImage('asset/images/logo.jpeg'),
+                    backgroundImage: AssetImage('assets/images/logo.jpeg'),
                   ),
                   const SizedBox(width: 10),
                   const Text(
@@ -249,7 +249,7 @@ class ProductCard extends StatelessWidget {
                     const SizedBox(
                       height: 5,
                     ),
-                    Image.network(
+                    Image.asset(
                       pro.images[0],
                       height: 160,
                     ),

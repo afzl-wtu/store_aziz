@@ -32,7 +32,7 @@ class _CartTileState extends State<CartTile> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: <Widget>[
-                  Image.network(
+                  Image.asset(
                     widget.cartItem.product.images[0],
                     height: 70,
                     width: 70,
