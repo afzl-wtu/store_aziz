@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../../core/cart_controller.dart';
 import '../../widgets/baged_cart_button.dart';
 
 class CheckoutMob extends StatelessWidget {
@@ -7,6 +9,8 @@ class CheckoutMob extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //Khoti
+    final cartController = Get.find<CartController>();
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(

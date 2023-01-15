@@ -67,7 +67,7 @@ class CartPC extends StatelessWidget {
                 children: <Widget>[
                   Obx(
                     () => Text(
-                      "SubTotal       ${cartController.total * 2}",
+                      "SubTotal       ${cartController.total}",
                       style: TextStyle(
                           color: Colors.grey.shade700, fontSize: 16.0),
                     ),
@@ -76,18 +76,18 @@ class CartPC extends StatelessWidget {
                     height: 5.0,
                   ),
                   Text(
-                    "Delivery       \$05",
+                    "Delivery       £05",
                     style:
                         TextStyle(color: Colors.grey.shade700, fontSize: 16.0),
                   ),
                   const SizedBox(
                     height: 10.0,
                   ),
-                  Text(
-                    "Cart Subtotal     ${cartController.total == 0 ? 0 : (cartController.total + 5 * 2)}",
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 18.0),
-                  ),
+                  Obx(() => Text(
+                        "Total     ${cartController.total == 0 ? 0 : (cartController.total + 5)}",
+                        style: const TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 18.0),
+                      )),
                   const SizedBox(
                     height: 20.0,
                   ),

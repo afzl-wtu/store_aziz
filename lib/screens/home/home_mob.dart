@@ -7,6 +7,7 @@ import 'package:newproject/models/category.dart';
 import 'package:newproject/screens/home/widgets/ccarousel_slider.dart';
 import 'package:newproject/screens/product/product_detail_mob.dart';
 import 'package:newproject/widgets/footer.dart';
+import 'package:newproject/widgets/header.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
 import 'package:phlox_drawer/controller/phlox_drawer_controller.dart';
 import 'package:phlox_drawer/controller/phlox_drawer_option.dart';
@@ -67,33 +68,8 @@ class _HomeMobState extends State<HomeMob> {
         ),
         body: Column(
           children: [
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-              color: Colors.blue,
-              height: 50,
-              width: double.infinity,
-              child: Row(
-                children: [
-                  const CircleAvatar(
-                    backgroundImage: AssetImage('assets/images/logo.jpeg'),
-                  ),
-                  const SizedBox(width: 10),
-                  const Text(
-                    'EMRSA',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  const SizedBox(width: 30),
-                  Expanded(
-                    child: OutlineSearchBar(
-                      cursorColor: Colors.blue,
-                      borderColor: Colors.blue,
-                      searchButtonIconColor: Colors.blue,
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            //Use same Header
+            const Header(),
             Expanded(
               child: ListView(
                 children: [

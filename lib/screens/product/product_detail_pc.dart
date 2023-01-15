@@ -20,7 +20,7 @@ class ProductDetailPC extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
-          'Wecome To WorldWide WebSite Ltd.',
+          'VAT Number: GB368916153',
           style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 15,
@@ -135,7 +135,7 @@ class _SideMenuState extends State<SideMenu> {
               Text("Total:", style: TextStyle(color: Colors.grey.shade700)),
               const Spacer(),
               Text(
-                "${widget.prod.price} x ${quantity.toInt()} = \$ ${widget.prod.price * quantity.toInt()}",
+                "${widget.prod.price} x ${quantity.toInt()} = £ ${widget.prod.price * quantity.toInt()}",
                 style: const TextStyle(fontSize: 16.0),
               ),
             ],

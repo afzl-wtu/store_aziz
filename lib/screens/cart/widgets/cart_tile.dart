@@ -47,9 +47,8 @@ class _CartTileState extends State<CartTile> {
                         Text(
                           widget.cartItem.product.title,
                           softWrap: true,
-                          maxLines: 2,
-                          style: const TextStyle(
-                              fontSize: 16.0, fontWeight: FontWeight.bold),
+                          maxLines: 1,
+                          style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(
                           height: 20.0,
@@ -61,12 +60,11 @@ class _CartTileState extends State<CartTile> {
                               style: const TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 18.0),
                             ),
-                            const SizedBox(
-                              width: 60,
-                            ),
+                            const Spacer(flex: 1),
                             GestureDetector(
                               onTap: () {
-                                cartController.quantityMinus(widget.cartItem);
+                                cartController.removeFromCart(
+                                    CartItem(product: widget.cartItem.product));
                                 setState(() {
                                   widget.cartItem.quantity--;
                                 });
@@ -95,6 +93,8 @@ class _CartTileState extends State<CartTile> {
                             ),
                             GestureDetector(
                               onTap: () {
+                                cartController.addToCart(
+                                    CartItem(product: widget.cartItem.product));
                                 setState(() {
                                   widget.cartItem.quantity++;
                                 });
@@ -111,7 +111,8 @@ class _CartTileState extends State<CartTile> {
                                   size: 15,
                                 ),
                               ),
-                            )
+                            ),
+                            const Spacer(flex: 4),
                           ],
                         ),
                       ],
@@ -133,7 +134,7 @@ class _CartTileState extends State<CartTile> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5.0)),
               padding: const EdgeInsets.all(0.0),
-              color: Colors.blue,
+              color: Colors.red,
               child: const Icon(
                 Icons.clear,
                 color: Colors.white,

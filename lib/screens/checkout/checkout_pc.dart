@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:newproject/widgets/footer.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
 
+import '../../core/cart_controller.dart';
 import '../../widgets/baged_cart_button.dart';
 
 class CheckoutPc extends StatelessWidget {
@@ -9,6 +11,8 @@ class CheckoutPc extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //Khoti
+    final cartController = Get.find<CartController>();
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -305,7 +309,7 @@ class CheckoutPc extends StatelessWidget {
                                       color: Colors.grey.shade800),
                                 ),
                                 Text(
-                                  "89.09",
+                                  cartController.total.toString(),
                                   style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
@@ -328,7 +332,7 @@ class CheckoutPc extends StatelessWidget {
                                       color: Colors.grey.shade800),
                                 ),
                                 Text(
-                                  "99.09",
+                                  "${cartController.total + 5}",
                                   style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
