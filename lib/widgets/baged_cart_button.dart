@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as b;
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:newproject/core/cart_controller.dart';
@@ -17,10 +17,10 @@ class BadgedCartIconButton extends StatelessWidget {
     final cartController = Get.find<CartController>();
     return Padding(
       padding: const EdgeInsets.only(right: 8.0),
-      child: Obx(() => Badge(
+      child: Obx(() => b.Badge(
             badgeColor: Colors.blue,
-            position: BadgePosition.topEnd(top: -1, end: -6),
-            animationType: BadgeAnimationType.slide,
+            position: b.BadgePosition.topEnd(top: -1, end: -6),
+            animationType: b.BadgeAnimationType.slide,
             badgeContent: Text(
               '${cartController.cart.length}',
               style: const TextStyle(color: Colors.white),
