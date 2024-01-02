@@ -76,7 +76,7 @@ class CartPC extends StatelessWidget {
                     height: 5.0,
                   ),
                   Text(
-                    "Delivery       £05",
+                    "Delivery       \$05",
                     style:
                         TextStyle(color: Colors.grey.shade700, fontSize: 16.0),
                   ),

@@ -79,11 +79,11 @@ class Footer extends StatelessWidget {
                   style: TextStyle(fontSize: 22, color: Colors.white),
                 ),
                 TextButton(
-                  child: const Text('info@emrsa.co.uk',
+                  child: const Text('info@khattanstar.com',
                       style: TextStyle(fontSize: 20, color: Colors.white)),
                   onPressed: () {
                     launchUrl(Uri.parse(Mailto(
-                      to: ['info@emrsa.co.uk'],
+                      to: ['info@khattanstar.com'],
                     ).toString()));
                   },
                 )

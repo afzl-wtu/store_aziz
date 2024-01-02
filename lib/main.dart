@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Layout(
       child: GetMaterialApp(
-        title: "EMRSA",
+        title: "KHATTAN STAR",
         debugShowCheckedModeBanner: false,
         home: const HomePage(),
         theme: ThemeData(

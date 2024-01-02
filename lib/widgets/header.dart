@@ -40,7 +40,7 @@ class _HeaderState extends State<Header> {
                   width: _width > 480 ? 25 : 10,
                 ),
                 Text(
-                  'EMRSA',
+                  'KHATTAN STAR',
                   style: TextStyle(
                       fontSize: _width > 480 ? 30 : 20, color: Colors.white),
                 ),

@@ -56,7 +56,7 @@ class _CartTileState extends State<CartTile> {
                         Row(
                           children: [
                             Text(
-                              '£ ${widget.cartItem.product.price}',
+                              '\$ ${widget.cartItem.product.price}',
                               style: const TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 18.0),
                             ),

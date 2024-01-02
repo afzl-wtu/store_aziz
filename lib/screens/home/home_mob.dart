@@ -85,7 +85,7 @@ class _HomeMobState extends State<HomeMob> {
                     height: 40,
                     width: double.infinity,
                     child: Text(
-                      "Affordability, Style and Comfort",
+                      "Prime Picks",
                       style: GoogleFonts.nanumMyeongjo(
                         textStyle: TextStyle(
                           fontSize: 20,
@@ -245,7 +245,7 @@ class ProductCard extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      '£ ${pro.price}',
+                      '\$ ${pro.price}',
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,

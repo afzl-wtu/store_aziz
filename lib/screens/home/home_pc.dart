@@ -38,7 +38,7 @@ class _HomePCState extends State<HomePC> {
       key: _key,
       appBar: AppBar(
         title: Text(
-          'VAT Number: GB368916153',
+          '</Prime Picks>',
           style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 15,
@@ -106,7 +106,7 @@ class _HomePCState extends State<HomePC> {
                             padding: const EdgeInsets.symmetric(
                                 vertical: 20, horizontal: 30),
                             child: Text(
-                              "Affordability, Style and Comfort!",
+                              "Prime Picks!",
                               style: GoogleFonts.nanumMyeongjo(
                                 textStyle: const TextStyle(
                                   fontSize: 25,
@@ -318,7 +318,7 @@ class _CustomInfoState extends State<HoverCard> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Text(
-                            '£ ${widget.prod.price}',
+                            '\$ ${widget.prod.price}',
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w500,
