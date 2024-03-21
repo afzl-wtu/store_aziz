@@ -1,4 +1,4 @@
-import 'package:newproject/models/product.dart';
+import 'product.dart';
 
 class CartItem {
   final Product product;

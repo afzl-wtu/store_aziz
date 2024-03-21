@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:newproject/widgets/footer.dart';
+import 'package:store_aziz/widgets/footer.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
 
 import '../../core/cart_controller.dart';
@@ -129,7 +129,7 @@ class CheckoutPc extends StatelessWidget {
                       ),
                       const SizedBox(height: 40),
                       Text(
-                        'Country / Region...* United Kingdom (UK)',
+                        'Country / Region...* Canada ',
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.grey.shade700),

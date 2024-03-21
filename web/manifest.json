@@ -1,6 +1,6 @@
 {
-    "name": "newproject",
-    "short_name": "newproject",
+    "name": "store_aziz",
+    "short_name": "store_aziz",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

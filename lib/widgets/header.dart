@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:newproject/models/product.dart';
-import 'package:newproject/screens/product/product_detail.dart';
+import 'package:store_aziz/models/product.dart';
+import 'package:store_aziz/screens/product/product_detail.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
 
 class Header extends StatefulWidget {

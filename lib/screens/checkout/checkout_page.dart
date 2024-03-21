@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:layout/layout.dart';
-import 'package:newproject/screens/checkout/checkout_mob.dart';
-import 'package:newproject/screens/checkout/checkout_pc.dart';
+import 'package:store_aziz/screens/checkout/checkout_mob.dart';
+import 'package:store_aziz/screens/checkout/checkout_pc.dart';
 
 class CeckOutPage extends StatelessWidget {
   const CeckOutPage({super.key});

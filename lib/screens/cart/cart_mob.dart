@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'package:newproject/models/cart_item.dart';
-import 'package:newproject/screens/cart/widgets/cart_tile.dart';
-import 'package:newproject/screens/checkout/checkout_mob.dart';
+// import '../../models/cart_item.dart';
+import 'widgets/cart_tile.dart';
+import '../checkout/checkout_mob.dart';
 
 import '../../core/cart_controller.dart';
 

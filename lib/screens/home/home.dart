@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:layout/layout.dart';
-import 'package:newproject/core/cart_controller.dart';
+import 'package:store_aziz/core/cart_controller.dart';
 
 import 'home_mob.dart';
 import 'home_pc.dart';

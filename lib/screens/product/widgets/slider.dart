@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:newproject/models/product.dart';
+import 'package:store_aziz/models/product.dart';
 // import 'package:image_network/image_network.dart';
 
 class ImageSlider extends StatelessWidget {

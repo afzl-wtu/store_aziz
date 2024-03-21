@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'package:get/get.dart';
-import 'package:newproject/models/product.dart';
+import 'package:store_aziz/models/product.dart';
 
 // import '../../product/product_detail.dart';
 

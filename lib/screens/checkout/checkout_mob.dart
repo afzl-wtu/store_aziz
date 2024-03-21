@@ -111,7 +111,7 @@ class CheckoutMob extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               Text(
-                'Country / Region...* United Kingdom (UK)',
+                'Country / Region...* Canada ',
                 style: TextStyle(
                     fontWeight: FontWeight.bold, color: Colors.grey.shade700),
               ),

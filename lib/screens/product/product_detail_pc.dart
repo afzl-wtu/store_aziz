@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:newproject/core/cart_controller.dart';
-import 'package:newproject/screens/product/widgets/slider.dart';
-import 'package:newproject/widgets/footer.dart';
-import 'package:newproject/widgets/header.dart';
+import 'package:store_aziz/core/cart_controller.dart';
+import 'package:store_aziz/screens/product/widgets/slider.dart';
+import 'package:store_aziz/widgets/footer.dart';
+import 'package:store_aziz/widgets/header.dart';
 
 import '../../models/cart_item.dart';
 import '../../models/category.dart';

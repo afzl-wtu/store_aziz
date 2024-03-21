@@ -3,11 +3,11 @@ import 'package:get/get.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 // import 'package:image_network/image_network.dart';
-import 'package:newproject/models/category.dart';
-import 'package:newproject/screens/home/widgets/ccarousel_slider.dart';
-import 'package:newproject/screens/product/product_detail_mob.dart';
-import 'package:newproject/widgets/footer.dart';
-import 'package:newproject/widgets/header.dart';
+import 'package:store_aziz/models/category.dart';
+import 'package:store_aziz/screens/home/widgets/ccarousel_slider.dart';
+import 'package:store_aziz/screens/product/product_detail_mob.dart';
+import 'package:store_aziz/widgets/footer.dart';
+import 'package:store_aziz/widgets/header.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
 import 'package:phlox_drawer/controller/phlox_drawer_controller.dart';
 import 'package:phlox_drawer/controller/phlox_drawer_option.dart';
